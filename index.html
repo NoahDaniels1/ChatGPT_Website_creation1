@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Art Collective</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7f7;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      display: inline-block;
+      margin-top: 10px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 20px;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 20px;
+    }
+    .artwork {
+      margin: 10px;
+      border: 2px solid #333;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+    .artwork img {
+      max-width: 100%;
+      height: auto;
+    }
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    form {
+      margin-top: 20px;
+      text-align: center;
+    }
+    form input, form textarea {
+      display: block;
+      margin: 10px auto;
+      padding: 10px;
+      width: 80%;
+    }
+    form button {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Art Collective</h1>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<div id="home">
+  <h2>Welcome to our Art Collective!</h2>
+  <p>We are a group of passionate artists creating mesmerizing artworks.</p>
+</div>
+
+<div id="gallery" class="gallery">
+  <div class="artwork">
+    <img src="artwork1.jpg" alt="Artwork 1">
+    <h3>Artwork Title 1</h3>
+    <p>Description of Artwork 1</p>
+    <p>Artist: Artist Name 1</p>
+  </div>
+  <div class="artwork">
+    <img src="artwork2.jpg" alt="Artwork 2">
+    <h3>Artwork Title 2</h3>
+    <p>Description of Artwork 2</p>
+    <p>Artist: Artist Name 2</p>
+  </div>
+  <!-- Add more artwork divs as needed -->
+</div>
+
+<footer>
+  <p>&copy; 2024 Art Collective. All rights reserved.</p>
+  <form id="contact" action="submit.php" method="post">
+    <h2>Contact Us</h2>
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+    <button type="submit">Submit</button>
+  </form>
+</footer>
+
+</body>
+</html>
