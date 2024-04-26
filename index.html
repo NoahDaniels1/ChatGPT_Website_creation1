@@ -55,6 +55,10 @@
       margin-top: 20px;
       text-align: center;
     }
+    form label {
+      display: block;
+      margin-bottom: 5px;
+    }
     form input, form textarea {
       display: block;
       margin: 10px auto;
@@ -106,9 +110,12 @@
   <p>&copy; 2024 Art Collective. All rights reserved.</p>
   <form id="contact" action="submit.php" method="post">
     <h2>Contact Us</h2>
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="email" name="email" placeholder="Your Email" required>
-    <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+    <label for="name">Your Name:</label>
+    <input type="text" id="name" name="name" placeholder="Your Name" required>
+    <label for="email">Your Email:</label>
+    <input type="email" id="email" name="email" placeholder="Your Email" required>
+    <label for="message">Your Message:</label>
+    <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
     <button type="submit">Submit</button>
   </form>
 </footer>
